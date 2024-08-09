@@ -1,5 +1,3 @@
-# sentimentalanalysis
-
 **Sentiment Analysis of Stock Market Articles**
 =====================================================
 
