@@ -2,8 +2,8 @@
 =====================================================
 
 This repository contains a Python script that analyzes the sentiment of stock market articles using 
-natural language processing (NLP) techniques. The code utilizes Lang Chain to generate embeddings, which are then 
-processed by APIs from OpenAI and/or LLaMA3 to determine the sentiment of the article's text.
+natural language processing (NLP) techniques. The code utilizes OPENAI to generate embeddings, which are then 
+processed by APIs from OpenAI and/or LLaMA3 to determine the sentiment of the article's text, all connected via LangChain
 
 **Key Features:**
 
