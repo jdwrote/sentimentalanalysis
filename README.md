@@ -15,9 +15,9 @@ processed by APIs from OpenAI and/or LLaMA3 to determine the sentiment of the ar
 
 **How it Works:**
 
-1. The script retrieves article text from online sources using OpenAI API or LLaMA3 model.
-2. Lang Chain (RAG tools) is used to generate embeddings based on the article's text.
-3. NLP techniques are applied to analyze the sentiment of each article, identifying mentions of specific 
+1. The script retrieves article text from online sources. Artcile is entered by user. 
+2. Lang Chain integrated tools and OPENAI Embeddeding are used to generate embeddings based on the article's text.
+3. NLP techniques (by OPENAI or LLama3) are applied to analyze the sentiment of each article, identifying mentions of specific 
 stocks and their corresponding sentiment (bullish, bearish, neutral, or not available).
 4. The sentiment analysis is then displayed in a mobile app, allowing users to quickly identify articles 
 related to stocks they're interested in.
