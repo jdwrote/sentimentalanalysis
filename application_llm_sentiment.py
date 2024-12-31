@@ -13,7 +13,7 @@ def sentimental_analysis_llm(url):
     # llm = Ollama(model="llama3")
     llm = ChatOpenAI(
         model="gpt-4o",
-        temperature=0.3
+        temperature=0.1
     )
 
     """
@@ -45,7 +45,7 @@ def sentimental_analysis_llm(url):
             {"input": "What stocks are mentioned, and give me sentimental level for each stock, "
                       "from bearish to "
                       "neutral to bullish. If not available, add NA. Add one sentence for context on each sentimental. "
-                      "Give me the answer in JSON format "})
+                      "Provide answer in JSON format follow these structure, 'name', 'ticker', 'sentiment','context'"})
         print(response["answer"])
         # response_json = text_to_json(response["answer"])
         return response["answer"]
@@ -53,8 +53,9 @@ def sentimental_analysis_llm(url):
 """
 Test the function
 """
-# result = sentimental_analysis_llm("https://www.fool.com/investing/2024/06/01/should-you-buy-nvidia-stock-before-june-6/")
-# result = sentimental_analysis_llm("https://www.benzinga.com/news/24/06/39213518/chip-etfs-in-focus-on-new-generation-ai-product-launches")
+#result = sentimental_analysis_llm("https://www.fool.com/investing/2024/06/01/should-you-buy-nvidia-stock-before-june-6/")
+#result = sentimental_analysis_llm("https://www.benzinga.com/news/24/06/39213518/chip-etfs-in-focus-on-new-generation-ai-product-launches")
+result = sentimental_analysis_llm("https://www.fool.com/investing/2024/06/23/crowdstrike-stock-is-getting-added-to-the-sp-500-b/")
 # if result is None:
 #     print("no answer found")
 # else:

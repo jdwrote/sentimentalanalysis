@@ -17,7 +17,7 @@ def load_embed(url):
         loader = WebBaseLoader(url)
         docs = loader.load()
         embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
-
+DesiDesign
         text_splitter = RecursiveCharacterTextSplitter()
         documents = text_splitter.split_documents(docs)
         vector = FAISS.from_documents(documents, embeddings)
